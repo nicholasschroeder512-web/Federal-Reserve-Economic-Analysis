@@ -76,7 +76,7 @@ sns.scatterplot(
     y='Effective Federal Funds Rate'
 )
 ```
-
+![Inflation vs Effective Federal Funds Rate](dashboard/inflation_effr_scatterplot.png)
 **Insight:** Higher inflation generally coincided with higher federal funds rates, although the variation in rates shows that inflation alone does not explain interest-rate levels.
 
 ---
@@ -144,14 +144,22 @@ FROM High_Unemployment;
 
 ## Power BI Dashboard
 
-The final dashboard brings the major indicators together and includes an interactive date filter for exploring different historical periods.
+The Power BI dashboard combines KPI cards with historical trend charts for inflation, federal funds rates, unemployment, and GDP growth. An interactive date slicer allows users to focus on specific periods and see the dashboard metrics and trends update accordingly.
 
 ![Federal Reserve Economic Analysis Dashboard](dashboard/dashboard_screenshot.png)
 
 The full Power BI file is available in the `dashboard` folder, and the complete Python and SQL analysis is available in the Jupyter notebook.
 
 ---
-
+## Business Answers
+- How have inflation, unemployment, GDP growth, and federal funds rates changed over time?
+  - Inflation and the Effective Federal Funds Rate generally increased into the late 1970s and early 1980s before trending lower over subsequent decades. Unemployment and GDP growth were more cyclical, with unemployment rising sharply during periods of economic weakness and GDP growth experiencing occasional negative quarters.
+- What relationship exists between inflation and the Effective Federal Funds Rate?
+  - Inflation and the Effective Federal Funds Rate had a strong positive correlation of 0.78. Higher inflation generally coincided with higher federal funds rates, although the relationship does not establish causation.
+- How did interest rates differ during periods of high inflation?
+  - When inflation was 8% or higher, the Effective Federal Funds Rate averaged 12.17%. When inflation was below 8%, the average was only 4.42%, showing that interest rates were substantially higher during high-inflation observations.
+- Which periods experienced unusually high inflation, unemployment, or negative GDP growth?
+  - Inflation peaked at 13.6% in June 1980, while unemployment reached 10.8% in November and December 1982. Negative GDP growth occurred in 33 of 250 reported quarters (13.2%), with 1974 and 2008 each containing three negative-growth quarters.
 ## Limitations
 
 Economic indicators in the dataset are reported at different frequencies, and the dataset ends in March 2017. The relationships identified are descriptive historical associations and should not be interpreted as evidence of causation.
