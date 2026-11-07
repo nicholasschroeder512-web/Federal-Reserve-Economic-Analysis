@@ -97,7 +97,21 @@ WHERE "Inflation Rate" IS NOT NULL
 GROUP BY Inflation_Category;
 ```
 
-**Insight:** When inflation was **8% or higher**, the Effective Federal Funds Rate averaged **12.17%**, compared with **4.42%** when inflation was below 8%.
+**Insight:** When inflation was **8% or higher**, the Effective Federal Funds Rate (Interest rate) averaged **12.17%**, compared with **4.42%** when inflation was below 8%.
+
+```sql
+WITH Low_Inflation AS (
+  SELECT
+    Date,
+    "Inflation Rate",
+    "Effective Federal Funds Rate"
+  FROM economic_data
+  WHERE "Inflation Rate" Between 1.5 AND 2.5)
+SELECT Avg("Effective Federal Funds Rate") AS Avg_EFFR
+FROM Low_Inflation
+Order By "Inflation Rate" DESC
+```
+**Insight:** When inflation was between **1.5% and 2.5%**, the Effective Federal Funds Rate (Interest rate) averaged **2.43%**.
 
 ---
 
