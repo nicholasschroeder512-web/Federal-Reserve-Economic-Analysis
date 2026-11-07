@@ -172,6 +172,7 @@ The full Power BI file is available in the `dashboard` folder, and the complete 
   - Inflation and the Effective Federal Funds Rate had a strong positive correlation of 0.78. Higher inflation generally coincided with higher federal funds rates, although the relationship does not establish causation.
 - How did interest rates differ during periods of high inflation?
   - When inflation was 8% or higher, the Effective Federal Funds Rate averaged 12.17%. When inflation was below 8%, the average was only 4.42%, showing that interest rates were substantially higher during high-inflation observations.
+  - When inflation was between 1.5% and 2.5%, the Effective Federal Funds Rate (Interest rate) averaged 2.43%.
 - Which periods experienced unusually high inflation, unemployment, or negative GDP growth?
   - Inflation peaked at 13.6% in June 1980, while unemployment reached 10.8% in November and December 1982. Negative GDP growth occurred in 33 of 250 reported quarters (13.2%), with 1974 and 2008 each containing three negative-growth quarters.
 ## Limitations
